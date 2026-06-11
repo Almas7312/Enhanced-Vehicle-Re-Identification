@@ -1,0 +1,45 @@
+# Dataset Description
+
+## Input Video Dataset
+
+The system accepts surveillance videos collected from traffic cameras.
+
+Format:
+
+* MP4
+* AVI
+* MOV
+
+Example:
+
+aabb.mp4
+
+## Query Vehicle Dataset
+
+A query image is provided to identify a specific vehicle.
+
+Example:
+
+redr.jpg
+
+## Generated Dataset
+
+During execution the system automatically generates:
+
+* Detected vehicle crops
+* Vehicle snapshots
+* Matching vehicle images
+
+These images are stored inside:
+
+datasets/detected_vehicles/
+
+## Supported Vehicle Categories
+
+* Car
+* Truck
+* Bus
+
+## Annotation Source
+
+Vehicle classes are detected using the COCO Dataset labels through YOLOv3.
